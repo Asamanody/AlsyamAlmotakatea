@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="0dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plan_gradant"
+        >
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/smll_wihte_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/plan_info2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/plan_info2" />
+
+        <TextView
+            android:id="@+id/plan_info2"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+
+                android:fontFamily="@font/defult"
+            android:textColor="@color/plan_card_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/plan_info1" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/smll_wihte_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/plan_info1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/plan_info1" />
+
+        <TextView
+            android:id="@+id/plan_info1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+
+                android:fontFamily="@font/defult"
+            android:textColor="@color/plan_card_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/plan_title" />
+
+        <TextView
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+
+                android:fontFamily="@font/defult"
+            android:gravity="center"
+            android:text="@string/go_to_info"
+            android:textColor="@color/plan_card_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plan_info2"
+            tools:layout_editor_absoluteX="19dp" />
+
+        <TextView
+            android:id="@+id/plan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginTop="8dp"
+
+                android:fontFamily="@font/defult"
+            android:text="@string/_16_8"
+            android:textColor="@color/plan_card_text"
+            android:textSize="@dimen/text_inputSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

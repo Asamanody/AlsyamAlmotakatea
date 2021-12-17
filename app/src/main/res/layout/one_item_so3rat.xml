@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardBg"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+        <TextView
+        android:textColor="@color/txtV"
+            android:layout_width="0dp"
+            android:fontFamily="@font/defult"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            />
+        <TextView
+        android:textColor="@color/txtV"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:fontFamily="@font/defult"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"/>
+        <TextView
+        android:textColor="@color/txtV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/defult"
+            android:layout_height="wrap_content"
+            android:id="@+id/so3r"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

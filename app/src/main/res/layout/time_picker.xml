@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:np_min="0"
+        app:np_max="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=" : "
+        android:textSize="@dimen/_22ssp"
+        android:textColor="@color/actv"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:np_min="0"
+        app:np_max="59"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=" : "
+        android:textSize="@dimen/_22ssp"
+        android:textColor="@color/actv"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:np_min="1"
+        app:np_max="12"
+        />
+</LinearLayout>
